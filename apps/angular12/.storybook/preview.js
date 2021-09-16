@@ -1,0 +1,1 @@
+import '!style-loader!css-loader!less-loader!../../../.storybook/global/styles/global';

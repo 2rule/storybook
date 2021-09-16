@@ -1,0 +1,26 @@
+import { Meta, Story, ColorPalette, ColorItem, Preview } from '@storybook/addon-docs';
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import { Tab, Tabs } from './tab-comp';
+
+<Meta 
+title="Color"
+parameters= {{ options: {isToolshown: false, showNav: true } }}
+/>
+
+# Colors 
+
+We can describe the colors like this.
+
+<Tabs>
+  <Tab label="Semantics">
+    <Story id="hidden-semantics--page" style={{ display: "block !important"}}>
+    </Story>
+  </Tab>
+  <Tab label="Usage" >
+  <Story id="hidden-usage--page" style={{ display: "block !important", }}>
+  </Story>
+  </Tab>
+</Tabs>
+
+<DesignTokenDocBlock categoryName="SCSS Colors"  />
+
